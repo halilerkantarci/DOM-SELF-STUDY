@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 id="title">Todo App</h3>
+    </div>
+    <ul id="tast-list">
+      <li>Görev 1</li>
+      <li>Görev 2</li>
+      <li>Görev 3</li>
+    </ul>
+    <script>
+      let sonuc = document.getElementById("title");
+      let a = document.getElementById("title").id;
+      console.log(sonuc);
+      console.log(a);
+
+      document.getElementById("title").style.fontSize = "42px";
+      document.getElementById("title").style.color = "red";
+      document.getElementById("title").style.backgroundColor = "black";
+      document.getElementById("title").style.border = "5px solid blue";
+      document.getElementById("title").innerText = "TODO APP";
+      document.getElementById("title").innerHTML = "<p>TODO APP</p>";
+
+      let result = document.querySelector("#title");
+      console.log((sonuc.style.textAlign = "center"));
+
+      let z = document.querySelector("li:first-child");
+      let v = document.querySelector("li:last-child");
+      console.log(v);
+      console.log(z);
+      let u = document.querySelector("li:nth-child(2)");
+      console.log(u);
+    </script>
+  </body>
+</html>
